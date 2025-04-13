@@ -12,7 +12,7 @@ st.write("Enter health information to predict the likelihood of diabetes.")
 file_path = "diabetes_pipeline.pkl"
 if not os.path.exists(file_path):
     st.info("Downloading model file...")
-    url = "https://drive.google.com/file/d/1aE_daexQbhtTrtFBThxK1_ytCvGaKn_i"  # due to size issue uploaded file on my google drive
+    url = "https://drive.google.com/uc?id=1aE_daexQbhtTrtFBThxK1_ytCvGaKn_i"  # due to size issue uploaded file on my google drive
     gdown.download(url, file_path, quiet=False)
 
 # Load the pipeline
